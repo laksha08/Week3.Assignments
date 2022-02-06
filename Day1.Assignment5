@@ -1,0 +1,39 @@
+
+public interface Language {
+	public void Java();
+	}
+//////////////////////////////////////
+
+public interface TestTool {
+	public void Selenium();
+
+}
+/////////////////////////////////////////
+
+public abstract class MultipleLangauge {
+	public void python() {
+		System.out.println("Python");
+	}
+	public void ruby() {
+		System.out.println("Ruby");
+	}
+
+}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+public class Automation extends MultipleLangauge  implements Language,TestTool {
+	public static void main(String[] args) {
+		Automation auto = new Automation();
+		auto.Java();
+		auto.python();
+		auto.ruby();
+				}
+
+	public void Java() {
+		}
+
+	public void Selenium() {
+	}
+}
+
+
